@@ -42,13 +42,14 @@ function App() {
     return saved ? JSON.parse(saved) : [];
   });
 
-  const [form, setForm] = useState({
-    title: '',
-    timeline: '',
-    start: '',
-    end:
-        notes: '','',
-  });
+const [form, setForm] = useState({
+  title: '',
+  timeline: '',
+  start: '',
+  end: '',
+  notes: '',
+});
+
 
   const [editingId, setEditingId] = useState(null);
   const [hidden, setHidden] = useState(new Set());
